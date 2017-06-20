@@ -1,0 +1,28 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" loaded="pageLoaded" id="homeScreen" cssClass="screen">
+    <Page.actionBar>
+        <widgets:action-bar />
+    </Page.actionBar>
+
+    <StackLayout>
+
+        <ScrollView>
+            <StackLayout>
+                <!-- homeModel additional fields -->
+                <GridLayout columns="*, *" rows="auto" cssClass="form-buttons">
+
+                    <widgets:button text="Cancel" tap="{{onhomeModelFormCancel}}" />
+
+
+                    <widgets:button col="1" text="Confirm" tap="{{onhomeModelFormSubmit}}" />
+
+                </GridLayout>
+            </StackLayout>
+        </ScrollView>
+        <!-- additional view content -->
+
+        <!-- START_CUSTOM_CODE_home -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+
+        <!-- END_CUSTOM_CODE_home -->
+    </StackLayout>
+</Page>

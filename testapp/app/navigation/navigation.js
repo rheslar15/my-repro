@@ -8,6 +8,8 @@ function pageLoaded(args) {
     helpers.platformInit(page);
     page.bindingContext = navigationViewModel;
     navigationViewModel.set('pageTitle', 'nativeScriptApp');
+
+    helpers.navigate(navigationViewModel.menuItems[0]);
 }
 
 function menuItemTap(args) {

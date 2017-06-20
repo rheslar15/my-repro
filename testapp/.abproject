@@ -2,11 +2,11 @@
   "ProjectName": "testapp",
   "ProjectGuid": "5b57ae1a-13c0-4c0b-91de-ca868006f5a0",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.testapp",
+  "AppIdentifier": "com.liro.liroudm",
   "DisplayName": "testapp",
   "Author": "",
   "Description": "testapp",
-  "BundleVersion": "1.0",
+  "BundleVersion": "15.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
     "1",
@@ -24,5 +24,6 @@
   "AndroidHardwareAcceleration": "true",
   "iOSStatusBarStyle": "Default",
   "FrameworkVersion": "2.5.0",
-  "Framework": "NativeScript"
+  "Framework": "NativeScript",
+  "iOSDeploymentTarget": "8.0"
 }

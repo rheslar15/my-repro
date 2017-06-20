@@ -3,14 +3,52 @@
   "views": [
     {
       "type": "NativeScript:view",
-      "name": "homeView",
-      "components": [],
-      "title": "Home View",
+      "name": "home",
+      "components": [
+        {
+          "type": "NativeScript:form",
+          "components": [],
+          "name": "homeModel",
+          "enableDataBinding": false,
+          "submitButton": "Confirm",
+          "cancelButton": "Cancel"
+        }
+      ],
+      "title": "Home",
+      "addToNavigation": false
+    },
+    {
+      "type": "NativeScript:view",
+      "name": "authenticationView",
+      "components": [
+        {
+          "type": "NativeScript:authentication",
+          "name": "authenticationViewModel",
+          "dataProvider": "backendServices",
+          "enableRegistration": false,
+          "enableLogout": false,
+          "enableRememberme": false,
+          "emailLabel": "Email",
+          "passwordLabel": "Password",
+          "signinLabel": "Sign In",
+          "signinRedirect": "home"
+        }
+      ],
+      "title": "Login",
       "addToNavigation": true,
       "icon": "home"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "NativeScript:dataProvider",
+      "name": "backendServices",
+      "source": "everlive",
+      "everliveKey": "pne82s1brfcnnf5q",
+      "offlineStorage": true,
+      "title": "Backend Services"
+    }
+  ],
   "name": "nativeScriptApp",
   "navigation": "listmenu",
   "transition": "none",
